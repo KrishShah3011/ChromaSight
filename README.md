@@ -16,7 +16,7 @@ This repo contains two core projects:
 │
 ├── README.md
 ├
-├── Captioning/
+├── Image Captioning/
 ├   ├── captureimageoakd.py
 ├   ├── Image Captioning.ipynb
 ├
@@ -32,12 +32,14 @@ This repo contains two core projects:
 ├   ├── Traffic Ligth Detection.ipynb
 ├ 
 ├── YOLO/
-├   ├── config.py
-├   ├── dataset.py
-├   ├── loss.py
-├   ├── model.py
-├   ├── train.py
-├   ├── utils.py
+├   ├── models/
+├        ├── yolov11n.pt
+├   ├── weights/
+├        ├── best.pt
+├        ├── last.pt
+├   ├── README_traffic-sign.md
+├   ├── traffic-sign-detection-using-yolov11.ipynb
+├  
 ├
 ├── Images/
 ├   ├── Architecture Images/
@@ -137,7 +139,6 @@ Colorblind individuals often struggle to identify color-coded traffic signs, whi
 - Single Forward Pass: The model processes the whole image in a single pass through the network, making predictions for all grid cells at once.
 
 - Post-Processing: After the predictions, non-maximum suppression (NMS) is used to filter out overlapping boxes, keeping only the ones with the highest confidence.
-
 
 #### Outputs:
 
